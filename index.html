@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="#" class="logo">
+        <i class="bx bx-code-block"></i>
+        <div class="logo-name">Admin</div>
+      </a>
+      <ul class="side-menu">
+        <li>
+          <a href="#"> <i class="bx bxs-dashboard"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-store-alt"></i>Shop</a>
+        </li>
+        <li class="active">
+          <a href="#"><i class="bx bx-analyse"></i>Analytics</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-message-square-dots"></i>Tickets</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-group"></i>Users</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-cog"></i>Settings</a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout"
+            ><i class="bx bx-log-out-circle"></i>Log out</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search-alt"></i>
+            </button>
+          </div>
+        </form>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="notif">
+          <i class="bx bx-bell"></i>
+          <span class="count">23</span>
+        </a>
+        <a href="#" class="profile">
+          <img src="img/userprofile.png" />
+        </a>
+      </nav>
+
+      <main>
+        <div class="header">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="sub-title">
+              <li><a href="#">Analytics</a></li>
+              /
+              <li><a href="#" class="active">Shop</a></li>
+            </ul>
+          </div>
+          <a href="#" class="report">
+            <i class="bx bx-cloud-download"></i>
+            <span>Download CSV</span>
+          </a>
+        </div>
+
+        <ul class="insights">
+          <li>
+            <i class="bx bx-calendar-plus"></i>
+            <span class="info">
+              <h3>3.861</h3>
+              <p>Paid orders</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-show-alt"></i>
+            <span class="info">
+              <h3>1.885</h3>
+              <p>Site visits</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-line-chart"></i>
+            <span class="info">
+              <h3>8.559</h3>
+              <p>Searches</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-euro"></i>
+            <span class="info">
+              <h3>24.684€</h3>
+              <p>Revenue</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="bottom-data">
+          <div class="orders">
+            <div class="header">
+              <i class="bx bx-receipt"></i>
+              <h3>Recent orders</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-search-alt"></i>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Order date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="img/profile-pic2.jpeg" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>28/04/2023</td>
+                  <td><span class="status completed">Completed</span></td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="img/profile-pic2.jpeg" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>28/04/2023</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="img/profile-pic2.jpeg" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>28/04/2023</td>
+                  <td><span class="status failed">Failed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="reminders">
+            <div class="header">
+              <i class="bx bx-note"></i>
+              <h3>Reminders</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-plus"></i>
+            </div>
+
+            <ul class="task-list">
+              <li class="completed">
+                <div class="task-title">
+                  <i class="bx bx-check-circle"></i>
+                  <p>Start our meeting</p>
+                </div>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="completed">
+                <div class="task-title">
+                  <i class="bx bx-check-circle"></i>
+                  <p>Check our site</p>
+                </div>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="failed">
+                <div class="task-title">
+                  <i class="bx bx-x-circle"></i>
+                  <p>Watch movies</p>
+                </div>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<script src="index.js"></script>
